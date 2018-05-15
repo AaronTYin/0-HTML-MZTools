@@ -1,0 +1,86 @@
+<view>
+
+  <view class="i-menu">
+    <view class="i-menu-btn {{tabIndex ? '' : 'selected'}}" bindtap="changeTab" id="indexA">
+      <text>正计时</text>
+    </view>
+    <view class="i-menu-btn {{tabIndex ? 'selected' : ''}}" bindtap="changeTab" id="indexB">
+      <text>倒计时</text>
+    </view>
+  </view>
+
+
+  <view class='pageA' wx:if="{{!tabIndex}}">
+    <text class='timeA_text'>
+      {{timeA_show[2]}} 时 {{timeA_show[1]}} 分 {{timeA_show[0]}} 秒
+    </text>
+
+    <!--对整个input class做text align center使输入的文本和光标居中-->
+    <input class='inputA' placeholder='任务简述' placeholder-style='text-align: center' bindinput='inputA' value='{{inputValueA}}'></input>
+    <!--<text>{{inputSaveA}}+{{inputValueA}}</text>-->
+
+    <view class='pageA_but'>
+      <view class='s_s'>
+        <button class='start' disabled='{{disabledStart}}' bindtap='start'>开始</button>
+        <button class='stop' disabled='{{disabledStop}}' bindtap='stop'>停止</button>
+      </view>
+      <view class='h'>
+        <button class='hold' bindtap='hold'>{{holdText}}</button>
+      </view>
+    </view>
+
+    <modal hidden='{{modalHiddenA}}' no-cancel bindconfirm='modalA'>
+      <view class='modalView'>
+        <text style='text-align:center' wx:if='{{inputValueA}}'>{{inputValueA}}</text>
+        <text style='text-align:center' wx:elif="{{inputValueA==''}}">无标题</text>
+        <text style='margin-top:50rpx'>开始时间: {{timeA_begin}}</text>
+        <text style='margin-top:20rpx'>结束时间: {{timeA_end}}</text>
+        <text style='margin-top:50rpx;margin-bottom:60rpx'>持续时间: {{timeA_show[2]}}时 {{timeA_show[1]}}分 {{timeA_show[0]}}秒</text>
+        <textarea class='modalInputA' placeholder='补充事项' placeholder-style='text-align:center' bindinput='modalInputA' value='{{modalInputSaveA}}'></textarea>
+      </view>
+    </modal>
+
+  </view>
+
+
+
+
+  <view class='pageB' wx:if="{{tabIndex}}">
+    <text class='timeA_text'>
+      {{timeA_show[2]}} 时 {{timeA_show[1]}} 分 {{timeA_show[0]}} 秒
+    </text>
+
+    <!--对整个input class做text align center使输入的文本和光标居中-->
+    <input class='inputA' placeholder='任务简述' placeholder-style='text-align: center' bindinput='inputA' value='{{inputValueA}}'></input>
+    <!--<text>{{inputSaveA}}+{{inputValueA}}</text>-->
+
+    <view class='pageA_but'>
+      <view class='s_s'>
+        <button class='start' disabled='{{disabledStart}}' bindtap='start'>开始</button>
+        <button class='stop' disabled='{{disabledStop}}' bindtap='stop'>停止</button>
+      </view>
+      <view class='h'>
+        <button class='hold' bindtap='hold'>{{holdText}}</button>
+        <button class='sett' disabled='{{disabledSett}}' bindtap='sett'>设置时间</button>
+      </view>
+    </view>
+
+    <modal hidden='{{modalHiddenT}}' bindconfirm='settConfirm' bindcancel='settCancel'>
+      时:<input bindinput='settInputH' value='{{timeA_show[2]}}' style='text-align:right;border:1px solid #000;margin:50rpx;'></input>
+      分:<input bindinput='settInputM' value='{{timeA_show[1]}}' style='text-align:right;border:1px solid #000;margin:50rpx;'></input>
+      秒:<input bindinput='settInputS' value='{{timeA_show[0]}}' style='text-align:right;border:1px solid #000;margin:50rpx;'></input>
+    </modal>
+
+    <modal hidden='{{modalHiddenA}}' no-cancel bindconfirm='modalA'>
+      <view class='modalView'>
+        <text style='text-align:center' wx:if='{{inputValueA}}'>{{inputValueA}}</text>
+        <text style='text-align:center' wx:elif="{{inputValueA==''}}">无标题</text>
+        <text style='margin-top:50rpx'>开始时间: {{timeA_begin}}</text>
+        <text style='margin-top:20rpx'>结束时间: {{timeA_end}}</text>
+        <text style='margin-top:50rpx;margin-bottom:60rpx'>持续时间: {{timeB_save[2]}}时 {{timeB_save[1]}}分 {{timeB_save[0]}}秒</text>
+        <textarea class='modalInputA' placeholder='补充事项' placeholder-style='text-align:center' bindinput='modalInputA' value='{{modalInputSaveA}}'></textarea>
+      </view>
+    </modal>
+  </view>
+
+</view>

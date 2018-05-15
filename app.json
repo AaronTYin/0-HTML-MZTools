@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/task/task",
+    "pages/sign/sign",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OwnLife",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#b2b2b2",
+    "selectedColor": "#2fcc85",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "快速打卡"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务管理"
+      },
+      {
+        "pagePath": "pages/sign/sign",
+        "text": "个人信息"
+      }
+    ]
+  }
+}
