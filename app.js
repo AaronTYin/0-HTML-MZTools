@@ -1,13 +1,6 @@
 //app.js
 App({
-  tempData: {
-    title: '',
-    beginTime: '',
-    endTime: '',
-    contTime: [],
-    addText: '',
-    constI: -1
-  },
+
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

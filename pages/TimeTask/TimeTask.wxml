@@ -1,0 +1,117 @@
+<view class='TimeTask'>
+
+  <view class="tab">
+    <view class="tabBtn {{(tabIndex==1) ? 'selected' : ''}}" bindtap="changeTab" id="indexA">
+      <text>正计时</text>
+    </view>
+    <view class="tabBtn {{(tabIndex==2) ? 'selected' : ''}}" bindtap="changeTab" id="indexB">
+      <text>倒计时</text>
+    </view>
+    <view class="tabBtn {{(tabIndex==3) ? 'selected' : ''}}" bindtap="changeTab" id="indexC">
+      <text>任务列表</text>
+    </view>
+  </view>
+
+
+<!----------------------------------------------------------------------->
+
+
+  <view class='pageA' wx:if="{{tabIndex==1}}">
+    <text class='time_text'>
+      {{time_show[2]}} 时 {{time_show[1]}} 分 {{time_show[0]}} 秒
+    </text>
+
+    <!--对整个input class做text align center使输入的文本和光标居中-->
+    <input class='inputAB' placeholder='任务简述' placeholder-style='text-align: center' bindinput='inputAB' value='{{inputValue}}'></input>
+
+    <view class='page_but'>
+      <view class='s_s'>
+        <button class='start' disabled='{{disabledStart}}' bindtap='start'>开始</button>
+        <button class='stop' disabled='{{disabledStop}}' bindtap='stop'>停止</button>
+      </view>
+      <view class='s_s'>
+        <button class='hold' bindtap='hold'>{{holdText}}</button>
+        <button class='clear' bindtap='clear'>重置</button>
+      </view>
+    </view>
+
+    <modal hidden='{{modalHiddenAB}}' no-cancel bindconfirm='modalAB'>
+      <view class='modalView'>
+        <text style='text-align:center' wx:if='{{inputValue}}'>{{inputValue}}</text>
+        <text style='text-align:center' wx:elif="{{inputValue==''}}">无标题</text>
+        <text style='margin-top:50rpx'>开始时间: {{time_begin}}</text>
+        <text style='margin-top:20rpx'>结束时间: {{time_end}}</text>
+        <text style='margin-top:50rpx;margin-bottom:60rpx'>持续时间: {{time_show[2]}}时 {{time_show[1]}}分 {{time_show[0]}}秒</text>
+        <textarea class='modalInputAB' placeholder='补充事项' placeholder-style='text-align:center' bindinput='modalInputAB' value='{{modalInputValue}}'></textarea>
+      </view>
+    </modal>
+
+  </view>
+
+
+<!----------------------------------------------------------------------->
+
+
+  <view class='pageB' wx:if="{{tabIndex==2}}">
+    <text class='time_text'>
+      {{time_show[2]}} 时 {{time_show[1]}} 分 {{time_show[0]}} 秒
+    </text>
+
+    <!--对整个input class做text align center使输入的文本和光标居中-->
+    <input class='inputAB' placeholder='任务简述' placeholder-style='text-align: center' bindinput='inputAB' value='{{inputValue}}'></input>
+
+    <view class='page_but'>
+      <view class='h'>
+        <button class='sett' disabled='{{disabledSett}}' bindtap='sett'>　设 置 时 间　</button>
+      </view>
+      <view class='s_s'>
+        <button class='start' disabled='{{disabledStart}}' bindtap='start'>开始</button>
+        <button class='stop' disabled='{{disabledStop}}' bindtap='stop'>停止</button>
+      </view>
+      <view class='s_s'>
+        <button class='hold' bindtap='hold'>{{holdText}}</button>
+        <button class='clear' bindtap='clear'>重置</button>
+      </view>
+    </view>
+
+    <modal hidden='{{modalHiddenST}}' bindconfirm='settConfirm' bindcancel='settCancel'>
+      时:<input bindinput='settInputH' value='{{time_show[2]}}' style='text-align:right;border:1px solid #000;margin:50rpx;'></input>
+      分:<input bindinput='settInputM' value='{{time_show[1]}}' style='text-align:right;border:1px solid #000;margin:50rpx;'></input>
+      秒:<input bindinput='settInputS' value='{{time_show[0]}}' style='text-align:right;border:1px solid #000;margin:50rpx;'></input>
+    </modal>
+
+    <modal hidden='{{modalHiddenAB}}' no-cancel bindconfirm='modalAB'>
+      <view class='modalView'>
+        <text style='text-align:center' wx:if='{{inputValue}}'>{{inputValue}}</text>
+        <text style='text-align:center' wx:elif="{{inputValue==''}}">无标题</text>
+        <text style='margin-top:50rpx'>开始时间: {{time_begin}}</text>
+        <text style='margin-top:20rpx'>结束时间: {{time_end}}</text>
+        <text style='margin-top:50rpx;margin-bottom:60rpx'>设定时间: {{time_show[2]}}时 {{time_show[1]}}分 {{time_show[0]}}秒</text>
+        <textarea class='modalInputAB' placeholder='补充事项' placeholder-style='text-align:center' bindinput='modalInputAB' value='{{modalInputValue}}'></textarea>
+      </view>
+    </modal>
+  </view>
+
+
+<!----------------------------------------------------------------------->
+
+
+  <view class='task' wx:if="{{tabIndex==3}}">
+    <view class='taskViewOut' wx:if='{{taskI==-1}}'>列表为空</view>
+    <view class='taskViewOut' wx:for='{{taskJ}}'>
+      <view class='taskViewIn' bindtap='tapi' id='{{item}}'>
+        <text>{{taskTitle[item]}}</text>
+        <text>{{taskBeginTime[item]}}</text>
+        <text>{{taskEndTime[item]}}</text>
+        <text>{{taskContTime[item][2]}}时 {{taskContTime[item][1]}}分 {{taskContTime[item][0]}}秒</text>
+        <text>{{taskAddText[item]}}</text>
+      </view>
+    </view>
+
+    <modal hidden='{{modalHiddenTask}}' bindconfirm='taskConfirm' bindcancel='taskCancel'>
+      <view style='text-align:center;color:#000'>是否删除?</view>
+    </modal>
+  </view>
+
+
+</view>

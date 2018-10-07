@@ -1,0 +1,56 @@
+<view class='calculator'>
+  <view class='calcType'>
+    <picker mode='selector' bindchange='select' value='{{selNum}}' range='{{sel}}'>
+    <view>{{sel[selNum]}} ▼</view>
+    </picker>
+  </view>
+
+  <view class='TypeA' disabled='disabledA'>
+    <view class='butGroup'>
+      <view class='butGroupLeft'>
+        <view class='butRow1'>
+          <button class='but' bindtap='butC'>C</button>
+          <button class='but' bindtap='butB'>←</button>
+          <button class='but' bindtap='butD'>÷</button>
+        </view>
+        <view class='butRow2'>
+          <button class='but' bindtap='but9'>9</button>
+          <button class='but' bindtap='but8'>8</button>
+          <button class='but' bindtap='but7'>7</button>
+        </view>
+        <view class='butRow3'>
+          <button class='but' bindtap='but6'>6</button>
+          <button class='but' bindtap='but5'>5</button>
+          <button class='but' bindtap='but4'>4</button>
+        </view>
+        <view class='butRow4'>
+          <button class='but' bindtap='but3'>3</button>
+          <button class='but' bindtap='but2'>2</button>
+          <button class='but' bindtap='but1'>1</button>
+        </view>
+        <view class='butRow5'>
+          <button class='but' bindtap='but0'>0</button>
+          <button class='but' bindtap='butP'>.</button>
+          <button class='but' bindtap='but100'>%</button>
+        </view>
+      </view>
+      <view class='butGroupRight'>
+        <button class='butR' bindtap='butM'>×</button>
+        <button class='butR' bindtap='butS'>-</button>
+        <button class='butR' bindtap='butA'>+</button>
+        <button class='butEqual' bindtap='butE'>=</button>
+      </view>
+    </view>
+    <view class='show'>
+      <view class='result'>
+          <text>{{resultShowNum}}</text>
+      </view>
+      <view class='input' >
+        <text class='a'>{{inputShowArr}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--<view class='TypeB'></view>-->
+ 
+</view>

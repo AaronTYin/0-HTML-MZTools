@@ -1,0 +1,12 @@
+.phoneinfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 86%;
+}
+.infoO {
+  margin-top: 30rpx;
+  margin-left: 135rpx;
+  border-right: thin solid black;
+  border-bottom: thin solid black;
+}

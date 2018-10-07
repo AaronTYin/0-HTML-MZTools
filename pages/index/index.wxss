@@ -1,64 +1,46 @@
 /**index.wxss**/
-.index {
+.funButGroup1,.funButGroup2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btnTimeTask,.btnCalculator,.btnLifePlan,.btnOpenWeChat,.btnPhoneInfo {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 20rpx;
+  border-radius: 0rpx;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
 }
-.i-menu{
-  flex: none;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  background-color: #fff;
-  border-bottom: 1px solid #f0f0f0;
-  height: 80rpx;
-}
-.i-menu-btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  font-size: 32rpx;
-}
-.selected{
-  color: #2fcc85;
-  border-bottom: 1px solid #2fcc85;
-}
-.pageA,.pageB{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.timeA_text{
-  margin-top: 160rpx;
-  padding-left: 50rpx;
-  padding-right: 50rpx;
-  padding-bottom: 40rpx;
-  border: 10rpx double #2fcc85;
-}
-.pageA_but{
-  margin-top: 86rpx;
-}
-.s_s{
-  display: flex;
-  flex-direction: row;
-}
-.start,.stop,.hold{
-  margin: 32rpx;
-  margin-top: 16rpx;
-}
-.inputA{
-  text-align: center;
-  margin-top: 90rpx;
-  border: 1px solid #000;
-}
-.modalView{
-  display: flex;
-  flex-direction: column;
-  color: #000;
-}
-.modalInputA{
+.btnTimeTaskImg {
   width: 100%;
-  border: 1px solid #000;
+  height: 100%;
+}
+.btnOpenWeChatImg,.btnPhoneInfoImg {
+  width: 110%;
+  height: 90%;
+}
+.btnCalculatorImg,.btnLifePlanImg {
+  width: 90%;
+  height: 100%;
+}
+.btnTimeTask::after,.btnCalculator::after,.btnLifePlan::after,.btnOpenWeChat::after,.btnPhoneInfo::after {
+  border: 0;
+}
+
+.waiting {
+  align-content: center;
+  text-align: center;
+  width: 90%;
+  margin-top: 180rpx;
+  padding-bottom: 18rpx;
+  margin-left: 4.6%;
+  font-size: 32rpx;
+  border-right: thin solid #8E532B;
+  border-bottom: thin solid #8E532B;
+  -webkit-text-fill-color: #84502C;
 }

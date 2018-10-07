@@ -1,14 +1,17 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/task/task",
+    "pages/TimeTask/TimeTask",
+    "pages/Calculator/Calculator",
+
+    "pages/PhoneInfo/PhoneInfo",
     "pages/sign/sign",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "OwnLife",
+    "navigationBarTitleText": "MZTools",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -18,11 +21,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "快速打卡"
-      },
-      {
-        "pagePath": "pages/task/task",
-        "text": "任务管理"
+        "text": "应用"
       },
       {
         "pagePath": "pages/sign/sign",

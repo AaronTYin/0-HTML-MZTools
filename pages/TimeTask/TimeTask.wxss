@@ -1,0 +1,88 @@
+page {
+  height: 95%;
+}
+.TimeTask {
+  height: 100%;
+}
+.tab{
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  height: 80rpx;
+}
+.tabBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  font-size: 32rpx;
+}
+.selected{
+  color: #2fcc85;
+  border-bottom: 1px solid #2fcc85;
+}
+.pageA,.pageB{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time_text{
+  margin-top: 160rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  padding-bottom: 40rpx;
+  border: 10rpx double #2fcc85;
+}
+.page_but{
+  margin-top: 160rpx;
+  width: 100%;
+}
+.s_s{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.h{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+.start,.stop,.hold,.clear{
+  margin: 32rpx;
+  margin-top: 16rpx;
+  width: 250rpx;
+}
+.inputAB{
+  text-align: center;
+  margin-top: 90rpx;
+  border: 1px solid #000;
+}
+.modalView{
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+.modalInputAB{
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.task{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.taskViewOut{
+  border: 2px solid #2fcc85;
+  text-align: center;
+  width: 90%;
+  margin-top: 20rpx;
+}
+.taskViewIn{
+  display: flex;
+  flex-direction: column;
+}

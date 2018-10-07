@@ -1,0 +1,58 @@
+<view class='phoneinfo'>
+  <view class='infoO'>
+    <text>手机品牌：</text>
+    <text>{{ibrand}}</text>
+  </view>
+  <view class='infoO'>
+    <text>手机型号：</text>
+    <text>{{imodel}}</text>
+  </view>
+  <view class='infoO'>
+    <text>设备像素比：</text>
+    <text>{{ipixelRatio}}</text>
+  </view>
+  <view class='infoO'>
+    <text>屏幕宽度：</text>
+    <text>{{iscreenWidth}}</text>
+  </view>
+  <view class='infoO'>
+    <text>屏幕高度：</text>
+    <text>{{iscreenHeight}}</text>
+  </view>
+  <view class='infoO'>
+    <text>可使用窗口宽度：</text>
+    <text>{{iwindowWidth}}</text>
+  </view>
+  <view class='infoO'>
+    <text>可使用窗口高度：</text>
+    <text>{{iwindowHeight}}</text>
+  </view>
+  <view class='infoO'>
+    <text>状态栏的高度：</text>
+    <text>{{istatusBarHeight}}</text>
+  </view>
+  <view class='infoO'>
+    <text>微信设置的语言：</text>
+    <text>{{ilanguage}}</text>
+  </view>
+  <view class='infoO'>
+    <text>微信版本号：</text>
+    <text>{{iversion}}</text>
+  </view>
+  <view class='infoO'>
+    <text>操作系统版本：</text>
+    <text>{{isystem}}</text>
+  </view>
+  <view class='infoO'>
+    <text>客户端平台：</text>
+    <text>{{iplatform}}</text>
+  </view>
+  <view class='infoO'>
+    <text>用户字体大小：</text>
+    <text>{{ifontSizeSetting}}</text>
+  </view>
+  <view class='infoO'>
+    <text>客户端基础库版本：</text>
+    <text>{{iSDKVersion}}</text>
+  </view>
+</view>
