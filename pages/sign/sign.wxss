@@ -18,3 +18,25 @@
 .userinfo_but{
   background: #ddf;
 }
+
+.mianze{
+  margin-top: 32%;
+  width: 80%;
+  text-align: center;
+  font-size: 25rpx;
+  color: grey;
+  line-height: 50rpx;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2%;
+  left: 40%;
+}
+.copyright text{
+  text-align: center;
+  font-size: 22rpx;
+  color: grey;
+}

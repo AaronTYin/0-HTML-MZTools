@@ -1,13 +1,13 @@
 <view class='TimeTask'>
 
-  <view class="tab">
-    <view class="tabBtn {{(tabIndex==1) ? 'selected' : ''}}" bindtap="changeTab" id="indexA">
+  <view class='tab'>
+    <view class="tabBtn {{(tabIndex==1) ? 'selected' : ''}}" bindtap='changeTab' id='indexA'>
       <text>正计时</text>
     </view>
-    <view class="tabBtn {{(tabIndex==2) ? 'selected' : ''}}" bindtap="changeTab" id="indexB">
+    <view class="tabBtn {{(tabIndex==2) ? 'selected' : ''}}" bindtap='changeTab' id='indexB'>
       <text>倒计时</text>
     </view>
-    <view class="tabBtn {{(tabIndex==3) ? 'selected' : ''}}" bindtap="changeTab" id="indexC">
+    <view class="tabBtn {{(tabIndex==3) ? 'selected' : ''}}" bindtap='changeTab' id='indexC'>
       <text>任务列表</text>
     </view>
   </view>
@@ -16,7 +16,7 @@
 <!----------------------------------------------------------------------->
 
 
-  <view class='pageA' wx:if="{{tabIndex==1}}">
+  <view class='pageA' wx:if='{{tabIndex==1}}'>
     <text class='time_text'>
       {{time_show[2]}} 时 {{time_show[1]}} 分 {{time_show[0]}} 秒
     </text>
@@ -52,7 +52,7 @@
 <!----------------------------------------------------------------------->
 
 
-  <view class='pageB' wx:if="{{tabIndex==2}}">
+  <view class='pageB' wx:if='{{tabIndex==2}}'>
     <text class='time_text'>
       {{time_show[2]}} 时 {{time_show[1]}} 分 {{time_show[0]}} 秒
     </text>
@@ -96,7 +96,7 @@
 <!----------------------------------------------------------------------->
 
 
-  <view class='task' wx:if="{{tabIndex==3}}">
+  <view class='task' wx:if='{{tabIndex==3}}'>
     <view class='taskViewOut' wx:if='{{taskI==-1}}'>列表为空</view>
     <view class='taskViewOut' wx:for='{{taskJ}}'>
       <view class='taskViewIn' bindtap='tapi' id='{{item}}'>

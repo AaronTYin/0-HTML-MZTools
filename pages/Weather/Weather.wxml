@@ -1,0 +1,38 @@
+<view class='city'>
+  <text>城市：{{weatherData.currentCity}}</text>
+</view>
+
+<view class='weather'>
+  <view class='main'>
+    <text class='temperature'>{{weatherData.temperature}}</text>
+    <text>{{weatherData.date}}</text>
+  </view>
+  <view class='other'>
+    <view class='border_r'>
+      <text class='title'>天气</text>
+      <text class='info'>{{weatherData.weatherDesc}}</text>
+    </view>
+    <view class='border_r'>
+      <text class='title'>风力</text>
+      <text class='info'>{{weatherData.wind}}</text>
+    </view>
+    <view>
+      <text class='title'>PM2.5</text>
+      <text class='info'>{{weatherData.pm25}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='fdwTitle'>
+  <text>4日天气</text>
+</view>
+<block wx:for='{{futureWeather}}'>
+  <view class='fwdContent'>
+    <view class='fwdCCL'>{{item.date}}</view>
+    <view class='fwdCCB'>{{item.temperature}}</view>
+    <view class='fwdCCL'>{{item.weather}}</view>
+    <view class='fwdCCL'>{{item.wind}}</view>
+  </view>
+</block>
+
+<view class='illustration'>API源于百度地图天气服务</view>

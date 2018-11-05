@@ -1,7 +1,4 @@
-//获取应用实例
 var app = getApp()
-
-var util = require('../../utils/util.js');
 
 Page({
   data: {
@@ -12,11 +9,16 @@ Page({
     wx.navigateTo({
       url: '../TimeTask/TimeTask'
     });
-
   },
   toCalculator: function () {
     wx.navigateTo({
       url: '../Calculator/Calculator'
+    });
+  },
+  toLifePlan: function (){
+    wx.showToast({
+      title: '功能开发中...',
+      icon: 'none'
     });
   },
   toPhoneInfo: function () {
@@ -24,7 +26,41 @@ Page({
       url: '../PhoneInfo/PhoneInfo'
     });
   },
-
+  toWeather: function (){
+    wx.navigateTo({
+      url: '../Weather/Weather'
+    });
+  },
+  toMap: function (){
+    wx.navigateTo({
+      url: '../Map/Map'
+    });
+  },
+  toHexadecimalC: function (){
+    wx.navigateTo({
+      url: '../HexadecimalC/HexadecimalC'
+    });
+  },
+  toFlashlight: function (){
+    wx.navigateTo({
+      url: '../Flashlight/Flashlight'
+    });
+  },
+  toClipboard: function (){
+    wx.navigateTo({
+      url: '../Clipboard/Clipboard'
+    });
+},
+  toScan: function (){
+    wx.navigateTo({
+      url: '../Scan/Scan'
+    });
+  },
+  toSetting: function (){
+    wx.navigateTo({
+      url: '../Setting/Setting'
+    });
+  },
 
 
   launchAppError: function () {
@@ -45,7 +81,6 @@ Page({
   onUnload: function () {
 
   },
-  //右上角分享
   onShareAppMessage: function () {
 
   }

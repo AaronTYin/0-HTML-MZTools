@@ -1,0 +1,23 @@
+page{
+  height: 100%;
+}
+.cp{
+  height: 100%;
+  padding-top: 15%;
+  background: rgb(250, 255, 238);
+}
+.cpContent{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 8%;
+  height: 50%;
+  border: black solid thin;
+}
+.cpContent text{
+  word-break: break-all;
+}
+.cp button{
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 20%;
+}

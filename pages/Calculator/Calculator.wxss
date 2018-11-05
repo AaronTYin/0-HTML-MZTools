@@ -12,7 +12,7 @@ page {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: rgb(204, 250, 199);
+  background-color: rgb(245, 250, 220);
 }
 .TypeA {
   display: flex;
@@ -23,7 +23,7 @@ page {
 .show {
   display: flex;
   flex-direction: column-reverse;
-  background-color: rgb(223, 222, 222);
+  background-color: rgb(230, 228, 228);
   height: 35%;
   padding-bottom: 6%;
   margin-bottom: 1%;

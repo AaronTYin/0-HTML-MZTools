@@ -1,5 +1,4 @@
 var app = getApp()
-
 var util = require('../../utils/util.js');
 
 var selNum = 0;
@@ -359,19 +358,19 @@ Page({
   getRight: function (e) {
     if (e == '+') {
       resultShowNum += Number(inputNow);
-      console.log("+",inputNow);
+      console.log('+',inputNow);
     }
     if (e == '-') {
       resultShowNum -= Number(inputNow);
-      console.log("-", inputNow);
+      console.log('-', inputNow);
     }
     if (e == '*') {
       resultShowNum *= Number(inputNow);
-      console.log("*", inputNow);
+      console.log('*', inputNow);
     }
     if (e == '/') {
       resultShowNum /= Number(inputNow);
-      console.log("/", inputNow);
+      console.log('/', inputNow);
     }
   },
 
@@ -436,12 +435,6 @@ Page({
     });
   },
 
-  onHide: function () {
-    
-  },
-  onUnload: function () {
-    
-  },
   onShareAppMessage: function () {
     
   }

@@ -1,0 +1,10 @@
+<view class='flashlight' style='background: {{bgColor}}'>
+  <button class='btnSwitch' bindtap='btnSwitch'>
+    <image src='../../icons/switch.png'></image>
+  </button>
+  <view class='adjust' wx:if='{{switchFlag==1}}'>
+    <view>亮度调节</view>
+    <slider bindchanging='lightChanging' value='{{currentLight}}' min='0' max='100' show-value/>
+  </view>
+  <view class='illustration'>小程序暂不支持调用闪光灯，请等待微信官方后续更新。</view>
+</view>

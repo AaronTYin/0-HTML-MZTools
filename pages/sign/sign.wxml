@@ -1,13 +1,19 @@
 <!--index.wxml-->
-<view class="container">
+<view class='container'>
 
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" hover-class='userinfo_but'> 登陆 </button>
+  <view class='userinfo'>
+    <button wx:if='{{!hasUserInfo && canIUse}}' open-type='getUserInfo' bindgetuserinfo='getUserInfo' hover-class='userinfo_but'> 登陆 </button>
 
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <image bindtap='bindViewTap' class='userinfo-avatar' src='{{userInfo.avatarUrl}}' background-size='cover'></image>
+      <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  <view class='mianze'>应用图标源自互联网，仅用于学习交流，请勿用于商业用途，因此带来的法律责任本作者概不负责，谢谢。</view>
+
+<view class='copyright'>
+  <text>v2.25.181022a</text>
+</view>
 
 </view>

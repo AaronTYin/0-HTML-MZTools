@@ -1,0 +1,6 @@
+<view class='cp'>
+  <view class='cpContent'>
+    <text>{{cpContent}}</text>
+  </view>
+  <button bindtap='clearCP'>清空</button>
+</view>

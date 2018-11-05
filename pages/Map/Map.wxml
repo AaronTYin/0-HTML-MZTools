@@ -1,0 +1,130 @@
+<view class='tab'>
+  <view class="tabBtn {{(tabIndex==1) ? 'selected' : ''}}" bindtap='changeTab' id='indexA'>
+    <text>地图</text>
+  </view>
+  <!--<view class="tabBtn {{(tabIndex==2) ? 'selected' : ''}}" bindtap='changeTab' id='indexB'>
+    <text>路线</text>
+  </view>-->
+  <view class="tabBtn {{(tabIndex==3) ? 'selected' : ''}}" bindtap='changeTab' id='indexC'>
+    <text>周边</text>
+  </view>
+</view>
+
+<!---------------------------------------------------------------------------->
+
+<view class='map' wx:if='{{tabIndex==1}}'>
+  <view class='mapView'>
+    <map id='iMap' longitude='{{currentLon}}' latitude='{{currentLat}}' scale='16' markers='{{markers}}' bindmarkertap='markertap' show-location style='width: 100%; height: 100vh'>
+        <cover-view class='Search'>
+          <cover-view class='inputSearch' bindtap='bindSearchTap'>
+            <cover-image src='../../icons/searchMap.png'></cover-image>
+            <cover-view>街道/大厦/小区</cover-view>
+          </cover-view>
+        </cover-view>
+
+        <cover-view class='backCurrent' bindtap='getCurrentLocation'>
+          <cover-image class='bcImg' src='../../icons/backCurrent.png'></cover-image>
+        </cover-view>
+    </map>
+  </view>
+
+</view>
+
+<view class='path' wx:if='{{tabIndex==2}}'>
+  路径
+</view>
+
+<view class='neibor' wx:if='{{tabIndex==3}}'>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>吃</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>美食</view>
+      <view class='neiborContent'>小吃快餐</view>
+      <view class='neiborContent'>火锅</view>
+      <view class='neiborContent'>中餐</view>
+      <view class='neiborContent'>西餐</view>
+    </view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>川菜</view>
+      <view class='neiborContent'>咖啡店</view>
+      <view class='neiborContent'>茶餐厅</view>
+      <view class='neiborContent'>甜点饮品</view>
+    </view>
+  </view>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>住</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>酒店</view>
+      <view class='neiborContent'>快捷酒店</view>
+      <view class='neiborContent'>星级酒店</view>
+      <view class='neiborContent'>青年旅社</view>
+      <view class='neiborContent'>旅馆</view>
+    </view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>公寓式酒店</view>
+    </view>
+  </view>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>游</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>景点</view>
+      <view class='neiborContent'>公园</view>
+      <view class='neiborContent'>植物园</view>
+      <view class='neiborContent'>动物园</view>
+      <view class='neiborContent'>博物馆</view>
+    </view>
+  </view>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>逛</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>商场</view>
+      <view class='neiborContent'>便利店</view>
+      <view class='neiborContent'>超市</view>
+      <view class='neiborContent'>五金店</view>
+      <view class='neiborContent'>菜市场</view>
+    </view>
+  </view>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>娱乐</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>网吧</view>
+      <view class='neiborContent'>洗浴</view>
+      <view class='neiborContent'>足疗</view>
+      <view class='neiborContent'>电影院</view>
+      <view class='neiborContent'>KTV</view>
+    </view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>酒吧</view>
+      <view class='neiborContent'>健身</view>
+    </view>
+  </view>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>生活</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>ATM</view>
+      <view class='neiborContent'>公厕</view>
+      <view class='neiborContent'>快递</view>
+      <view class='neiborContent'>理发店</view>
+      <view class='neiborContent'>药店</view>
+    </view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>银行</view>
+      <view class='neiborContent'>医院</view>
+      <view class='neiborContent'>照相馆</view>
+      <view class='neiborContent'>美容院</view>
+    </view>
+  </view>
+  <view class='neiborGroup'>
+    <view class='neiborTitle'>出行</view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>加油站</view>
+      <view class='neiborContent'>公交站</view>
+      <view class='neiborContent'>地铁站</view>
+      <view class='neiborContent'>停车场</view>
+      <view class='neiborContent'>长途车站</view>
+    </view>
+    <view class='nConGroup'>
+      <view class='neiborContent'>火车票代售</view>
+    </view>
+  </view>
+</view>

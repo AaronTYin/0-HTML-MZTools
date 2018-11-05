@@ -1,5 +1,4 @@
 var app = getApp()
-
 var util = require('../../utils/util.js');
 
 var ibrand = '';
@@ -75,13 +74,8 @@ Page({
       iSDKVersion: iSDKVersion
     });
   },
-  onHide: function () {
-    
-  },
-  onUnload: function () {
-    
-  },
+
   onShareAppMessage: function () {
-    
+
   }
 })

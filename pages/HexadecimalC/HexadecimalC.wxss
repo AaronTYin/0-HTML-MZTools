@@ -1,0 +1,24 @@
+Page{
+  background: rgb(242, 253, 252);
+}
+.hc{
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  margin-left: 10%;
+  margin-top: 12%;
+}
+.content input{
+  border: black solid thin;
+  width: 90%;
+}
+.btnGroup{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.btnChange,.btnClear{
+  width: 35%;
+  padding: 40rpx;
+}

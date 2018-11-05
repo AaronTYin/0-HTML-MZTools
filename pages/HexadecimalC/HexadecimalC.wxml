@@ -1,0 +1,26 @@
+<view class='hc'>
+  <view class='content'>
+    <text>二进制：</text>
+    <input id='iB' type='text' confirm-type='done' bindconfirm='hValue' bindfocus='hId' bindblur='hValue' value='{{vB}}'></input>
+  </view>
+  <view class='content'>
+    <text>八进制：</text>
+    <input id='iO' type='text' confirm-type='done' bindconfirm='hValue' bindfocus='hId' bindblur='hValue' value='{{vO}}'></input>
+  </view>
+  <view class='content'>
+    <text>十进制：</text>
+    <input id='iD' type='text' confirm-type='done' bindconfirm='hValue' bindfocus='hId' bindblur='hValue' value='{{vD}}'></input>
+  </view>
+  <view class='content'>
+    <text>十六进制：</text>
+    <input id='iH' type='text' confirm-type='done' bindconfirm='hValue' bindfocus='hId' bindblur='hValue' value='{{vH}}'></input>
+  </view>
+  <view class='btnGroup'>
+    <view class='btnChange'>
+     <button bindtap='hChange'>转换</button>
+    </view>
+    <view class='btnClear'>
+      <button bindtap='hClear'>清除</button>
+    </view>
+  </view>
+</view>

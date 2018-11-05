@@ -1,0 +1,6 @@
+<view class='content'>
+  <view class="text">扫码结果</view>
+  <view class="result">{{result}}</view>
+</view>
+<button class='btnScan' type="primary" bindtap="scanCode">扫一扫</button>
+<view class='illustration'>更贴心的功能请等待微信小程序官方更新支持...</view>

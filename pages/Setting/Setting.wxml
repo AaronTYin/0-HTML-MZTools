@@ -1,0 +1,39 @@
+<view class="settingAll">
+  <view class='settingOne'>
+    <view>用户信息</view>
+    <icon wx:if="{{setting['scope.userInfo']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>地理位置</view>
+    <icon wx:if="{{setting['scope.userLocation']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>通讯地址</view>
+    <icon wx:if="{{setting['scope.address']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>发票抬头</view>
+    <icon wx:if="{{setting['scope.invoiceTitle']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>微信运动步数</view>
+    <icon wx:if="{{setting['scope.werun']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>录音功能</view>
+    <icon wx:if="{{setting['scope.record']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>保存到相册</view>
+    <icon wx:if="{{setting['scope.writePhotosAlbum']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+  <view class='settingOne'>
+    <view>摄像头</view>
+    <icon wx:if="{{setting['scope.camera']}}" class="icon-small" type="success_no_circle" size="23"></icon>
+  </view>
+</view>
+
+<view class="btnGroup">
+  <button type="primary" bindtap="getSetting">获取小程序设置</button>
+  <button open-type="openSetting" type="default">打开小程序设置</button>
+</view>

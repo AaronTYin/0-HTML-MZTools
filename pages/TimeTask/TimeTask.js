@@ -1,6 +1,5 @@
 //获取应用实例
 var app = getApp()
-
 var util = require('../../utils/util.js');
 
 var tabIndex = 1;
@@ -392,5 +391,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
 })

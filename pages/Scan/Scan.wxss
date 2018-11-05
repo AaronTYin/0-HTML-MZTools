@@ -1,0 +1,32 @@
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 6%;
+}
+.result{
+  border: black solid thin;
+  width: 68%;
+  margin-left: 10%;
+  margin-bottom: 50%;
+  padding: 6%;
+  min-height: 48rpx;
+  word-break: break-all;
+}
+.btnScan{
+  width: 75%;
+  margin-left: 12%;
+}
+.illustration{
+  text-align: center;
+  font-size: 26rpx;
+  position: absolute;
+  bottom: 2%;
+  left: 26%;
+  width: 50%;
+  color: grey;
+  line-height: 45rpx;
+}

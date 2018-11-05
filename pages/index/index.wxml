@@ -1,27 +1,75 @@
 <view class='funButGroup1'>
-  <button class='btnTimeTask' bindtap='toTimeTask'>
-    <image class='btnTimeTaskImg' src='../../icons/TimeTask.png'></image>
+  <button class='iconBtn' bindtap='toTimeTask'>
+    <image class='iconImg' src='../../icons/TimeTask.png'></image>
     <view>时间打卡</view>
   </button>
-  <button class='btnCalculator' bindtap='toCalculator'>
-    <image class='btnCalculatorImg' src='../../icons/Calculator.png'></image>
+  <button class='iconBtn' bindtap='toCalculator'>
+    <image class='iconImg' src='../../icons/Calculator.png'></image>
     <view>计算器</view>
   </button>
-  <button class='btnLifePlan' bindtap='toLifePlan'>
-    <image class='btnLifePlanImg' src='../../icons/LifePlan.png'></image>
-    <view>生活计划</view>
+  <button class='iconBtn' bindtap='toLifePlan'>
+    <image class='iconImg' src='../../icons/LifePlan.png'></image>
+    <view>待办</view>
   </button>
-    <button class='btnPhoneInfo' bindtap='toPhoneInfo'>
-    <image class='btnPhoneInfoImg' src='../../icons/PhoneInfo.png'></image>
+  <button class='iconBtn' bindtap='toPhoneInfo'>
+    <image class='iconImg' src='../../icons/PhoneInfo.png'></image>
     <view>手机信息</view>
   </button>
 </view>
 
-<view class='funButGroup1'>
-  <button class='btnOpenWeChat' open-type='launchApp' app-parameter='wechat' binderrror='launchAppError'>
-    <image class='btnOpenWeChatImg' src='../../icons/WeChat.png'></image>
+<view class='funButGroup2'>
+  <button class='iconBtn' bindtap='toWeather'>
+    <image class='iconImg' src='../../icons/Weather.png'></image>
+    <view>天气</view>
+  </button>
+  <button class='iconBtn' bindtap='toMap'>
+    <image class='iconImg' src='../../icons/Map.png'></image>
+    <view>地图</view>
+  </button>
+  <button class='iconBtn' bindtap='toHexadecimalC'>
+    <image class='iconImg' src='../../icons/HexadecimalConversion.png'></image>
+    <view>进制转换</view>
+  </button>
+
+  <button class='iconBtn' open-type='launchApp' app-parameter='wechat' binderrror='launchAppError'>
+    <image class='iconImg' src='../../icons/WeChat.png'></image>
     <view>微信</view>
   </button>
 </view>
 
+<view class='funButGroup3'>
+  <button class='iconBtn' bindtap='toFlashlight'>
+    <image class='iconImg' src='../../icons/Flashlight.png'></image>
+    <view>手电筒</view>
+  </button>
+  <button class='iconBtn' bindtap='toClipboard'>
+    <image class='iconImg' src='../../icons/Clipboard.png'></image>
+    <view>剪切板</view>
+  </button>
+  <button class='iconBtn' bindtap='toScan'>
+    <image class='iconImg' src='../../icons/Scan.png'></image>
+    <view>扫码</view>
+  </button>
+  <button class='iconBtn' bindtap='toSetting'>
+    <image class='iconImg' src='../../icons/Setting.png'></image>
+    <view>权限设置</view>
+  </button>
+</view>
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------->
+
 <view class='waiting'>MZ-Life v3.0 will come back at 2019.1.1 ...</view>
+
+<view class='copyright'>
+  <text>梦泽</text>
+  <text>mengze.top</text>
+</view>

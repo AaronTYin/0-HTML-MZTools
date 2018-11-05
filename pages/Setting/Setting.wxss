@@ -1,0 +1,12 @@
+.settingOne{
+  display: flex;
+  margin-top: 50rpx;
+  margin-left: 5%;
+  width: 85%;
+  border-bottom: black solid thin;
+  border-right: black solid thin;
+  justify-content: center;
+}
+.btnGroup button{
+  margin: 40rpx;
+}
