@@ -45,7 +45,7 @@
 ![权限信息](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%8B%E6%9C%BA%E6%9D%83%E9%99%90%E4%BF%A1%E6%81%AF.jpg)
 ![权限设置](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%8B%E6%9C%BA%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE.jpg)
 ## 跳回外部调用程序
-![跳回外部调用程序](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%A4%96%E9%83%A8%E5%BA%94%E7%94%A8%E8%B7%B3%E5%9B%9E%E5%B0%8F%E7%A8%8B%E5%BA%8F.jpg)
+![跳回外部调用程序](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E8%B7%B3%E5%9B%9E%E5%A4%96%E9%83%A8%E8%B0%83%E7%94%A8%E7%A8%8B%E5%BA%8F.jpg)
 ## 小游戏开发留存
 ![小游戏备用](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%A4%87%E7%94%A8.jpg)
 ## 登录界面
