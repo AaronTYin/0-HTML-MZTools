@@ -11,7 +11,7 @@
 
 
 ## 加载界面
-<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%8A%A0%E8%BD%BD.jpg" width=50%>加载界面</img>
+<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%8A%A0%E8%BD%BD.jpg" width=50% align-item="center">加载界面</img>
 ## 主界面
 <img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg" width=50%>主界面</img>
 ## 时间打卡
