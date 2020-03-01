@@ -9,10 +9,11 @@
 >详细开发过程及相关知识：[小程序的二三事](https://mengze.top/小程序的二三事/)
 
 
+
 ## 加载界面
-<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%8A%A0%E8%BD%BD.jpg" width=50%></img>
+<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%8A%A0%E8%BD%BD.jpg" width=50%>加载界面</img>
 ## 主界面
-<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg" width=50%></img>
+<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg" width=50%>主界面</img>
 ## 时间打卡
 ![时间打卡正计时](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%97%B6%E9%97%B4%E6%89%93%E5%8D%A1%E6%AD%A3%E8%AE%A1%E6%97%B6.jpg)
 ![时间打卡正计时完成](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%97%B6%E9%97%B4%E6%89%93%E5%8D%A1%E6%AD%A3%E8%AE%A1%E6%97%B6%E5%AE%8C%E6%88%90.jpg)
