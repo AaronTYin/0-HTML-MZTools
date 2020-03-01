@@ -54,8 +54,10 @@
 #### 手电筒打开
 <img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%8B%E7%94%B5%E7%AD%92%E6%89%93%E5%BC%80.jpg" width=50%></img>
 ## 扫码
-#### 扫码界面<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%AB%E7%A0%81%E7%95%8C%E9%9D%A2.jpg" width=50%></img>
-#### 扫码结果<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%AB%E7%A0%81%E7%BB%93%E6%9E%9C.jpg" width=50%></img>
+#### 扫码界面
+<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%AB%E7%A0%81%E7%95%8C%E9%9D%A2.jpg" width=50%></img>
+#### 扫码结果
+<img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%AB%E7%A0%81%E7%BB%93%E6%9E%9C.jpg" width=50%></img>
 ## 权限
 #### 权限信息
 <img src="https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E6%89%8B%E6%9C%BA%E6%9D%83%E9%99%90%E4%BF%A1%E6%81%AF.jpg" width=50%></img>
