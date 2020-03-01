@@ -10,7 +10,7 @@
 
 
 ## 加载界面
-![加载界面](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%8A%A0%E8%BD%BD.jpg = 20x10)
+<div style="width: 50px;">![加载界面](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E5%8A%A0%E8%BD%BD.jpg)
 ## 主界面
 ![主界面](https://github.com/AaronTYin/0-HTML-MZTools/blob/master/SW_CDesign/%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg)
 ## 时间打卡
